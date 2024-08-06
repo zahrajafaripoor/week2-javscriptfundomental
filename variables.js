@@ -115,12 +115,14 @@ let space9 = '';
 
 // Display the Tic-Tac-Toe board using the variables
 console.log(`
- ${space1}  | ${space2} |||${space3} 
+ ${space1}  | ${space2} | ${space3} 
 -----------
  ${space4} | ${space5} | ${space6} 
 -----------
  ${space7} | ${space8} | ${space9} 
 `);
+
+
 
 
 

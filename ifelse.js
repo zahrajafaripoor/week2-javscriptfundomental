@@ -190,7 +190,35 @@ if (time >= 7 && time < 9) {
     console.log(`At ${time} I'm still asleep.`);
 }
 
+
 //ACTIVITY 7
+
+let str = "jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi";
+
+// Print the length of the string
+console.log(`The length of the string is: ${str.length}`);
+
+// Define vowels
+const vowels = 'aeiou';
+
+// Initialize a variable to store the index of the last vowel
+let lastVowelIndex = -1;
+
+// Check for the last vowel using lastIndexOf method for each vowel
+for (let i = 0; i < vowels.length; i++) {
+    const vowel = vowels[i];
+    const index = str.lastIndexOf(vowel);
+    if (index > lastVowelIndex) {
+        lastVowelIndex = index;
+    }
+}
+
+// Print the result
+if (lastVowelIndex === -1) {
+    console.log("No vowels found in the string.");
+} else {
+    console.log(`The index of the last vowel is: ${lastVowelIndex}`);
+}
 
 
 

@@ -67,5 +67,53 @@ let favSongs = 1
         console.log(favSongs[i])
     ]
 
-   // ACTIVITY 2
+
+ // ACTIVITY 2
+
+   numberOfRandomNumbers = 6;
+const min = 1;
+const max = 50;
+
+for (let i = 0; i < numberOfRandomNumbers; i++) {
+    
+    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    
+    console.log(randomNumber);
+}
+
+
+//ACTIVITY 3
+
+function countDown() {
+    console.log('Activity 3: Counting down from 9 to 0');
+    for (let i = 9; i >= 0; i--) {
+        console.log(i);
+    }
+}
+
+// Call the function for Activity 3
+countDown();
+
+//ACTIVITY 4
+
+const films = ["Inception", "Interstellar", "Ghostbusters", "The Matrix"];
+
+console.log("List of films:");
+for (let i = 0; i < films.length; i++) {
+    console.log(films[i]);
+}
+
+const thirdFilm = films[2]; // Index 2 is the 3rd item in the array
+
+if (thirdFilm === "Ghostbusters") {
+    console.log("Yay it's Ghostbusters");
+} else {
+    console.log("Boo! We want Ghostbusters");
+}
+
+//ACTIVITY 5
+
+
+
+
 

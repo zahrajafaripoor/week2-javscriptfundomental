@@ -69,6 +69,7 @@
 // //}
 
 //ACTIVITY 1
+
 let age = 38;
 let country = "UK";
 
@@ -145,6 +146,53 @@ if (num % 3 === 0 || num % 5 === 0) {
 }
 
 
-     //ACTIVITY 4
+//ACTIVITY 4
 
-         
+let Num = 18
+if (Num % 3 === 0 && Num % 5 === 0) {
+    console.log("fizz buzz");
+} else if (Num % 3 === 0) {
+    console.log("fizz");
+} else if (Num % 5 === 0) {
+    console.log("buzz");
+} else {
+    console.log(Num);
+}    
+
+//ACTIVITY 5
+
+let palindromeNum = 20202;
+
+let palindromeStr = palindromeNum.toString();
+
+if (palindromeStr === palindromeStr.split('').reverse().join('')) {
+    console.log(`${palindromeNum} is a palindrome.`);
+} else {
+    console.log(`${palindromeNum} is not a palindrome.`);
+}
+
+
+//ACTIVITY 6
+
+let time = 8; 
+let placeOfWork = "Office";
+let townOfHome = "Hometown";
+
+if (time >= 7 && time < 9) {
+    console.log(`At ${time} I'm at home in ${townOfHome}.`);
+} else if (time >= 9 && time < 17) {
+    console.log(`At ${time} I'm at work in ${placeOfWork}.`);
+} else if (time >= 17 && time < 19) {
+    console.log(`At ${time} I'm commuting.`);
+} else if (time >= 19) {
+    console.log(`At ${time} I'm at home in ${townOfHome}.`);
+} else {
+    console.log(`At ${time} I'm still asleep.`);
+}
+
+//ACTIVITY 7
+
+
+
+
+

@@ -54,19 +54,97 @@
 
        //}
 
-       //ACTIVITY 1
+     
 
     // Step 1: Array with up to 5 of my favourite film
     
-    let favoriteFilms = ["The Shawshank Redemption", "The Godfather", "The Dark Knight", "Pulp Fiction", "Inception"];
+//     let favoriteFilms = ["The Shawshank Redemption", "The Godfather", "The Dark Knight", "Pulp Fiction", "Inception"];
 
-// Step 2: Add 2 more films 
-favoriteFilms.push("The Matrix", "Interstellar");
+// // Step 2: Add 2 more films 
+// favoriteFilms.push("The Matrix", "Interstellar");
 
-// Step 3: Use a loop to cycle through the array
-for (let i = 0; i < favoriteFilms.length; i++) {
-    console.log(favoriteFilms[i]);
+// // Step 3: Use a loop to cycle through the array
+// for (let i = 0; i < favoriteFilms.length; i++) {
+//   //  console.log(favoriteFilms[i]);
+// //}
+
+//ACTIVITY 1
+let age = 38;
+let country = "UK";
+
+// If statement to check age and country
+if (age > 17 && country === "UK") {
+  console.log("Yes I can serve you");
+} else {
+  console.log("You aren’t old enough");
 }
 
 //ACTIVITY 2
-     
+
+let topping = "Cheese";
+
+switch (topping) {
+  case "Cheese":
+  case "Tomato":
+  case "Mushrooms":
+    console.log("These are important ingredients for my pizza.");
+    break;
+  case "Chicken":
+  case "Olives":
+  case "Onions":
+    console.log("I don't mind having ${topping} on my pizza.");
+    break;
+  default:
+    console.log("${topping} should not be on a pizza.");
+}
+
+//ACTIVITY 3
+
+// variable for the password
+let password = "mypassword";
+
+// Check the number of characters in the password
+if (password.length < 8) {
+  // If the password is less than 8 characters, log that it's too short
+  console.log("The password is too short.");
+} else {
+  // Otherwise, log the password
+  console.log("The password is: " + password);
+}
+
+// Change the value of the password variable and check again
+password = "newpassword123"; 
+if (password.length < 8) {
+  // If the password is less than 8 characters, log that it's too short
+  console.log("The password is too short.");
+} else {
+  // Otherwise, log the password
+  console.log("The password is: " + password);
+}
+
+// Define a numeric variable
+let num = 15;
+
+// Check if the number is divisible by 3 or 5
+if (num % 3 === 0 || num % 5 === 0) {
+  // If the number is divisible by 3 or 5, log this message
+  console.log("This number is divisible by 3 or 5.");
+} else {
+  // Otherwise, log that it's not divisible by 3 or 5
+  console.log("This number is not divisible by 3 or 5.");
+}
+
+// Change the value of the num variable and check again
+num = 7; // Here you can enter a new number
+if (num % 3 === 0 || num % 5 === 0) {
+  // If the number is divisible by 3 or 5, log this message
+  console.log("This number is divisible by 3 or 5.");
+} else {
+  // Otherwise, log that it's not divisible by 3 or 5
+  console.log("This number is not divisible by 3 or 5.");
+}
+
+
+     //ACTIVITY 4
+
+         

@@ -17,6 +17,30 @@
 
 
 
+//let multiplesTwo = [];
+//for (let i = 0; i<20; i++)
+
+   // if ( i% 2 == 0){
+       // multtiplesTwo.push(i);
+   // };
+   // console.log(`Numbers divisible by 2:${multiplesTwo}`)
+
+
+   //let age = 12;
+   //while (age < 18){
+   // console.log("you are a child")
+   // age ++
+   //}console.log
+   // console. log ("you are an adult")
+  //let cards = ["Diamon", "Spade", "Heart", "Club"];
+  //let currentCard = "Club";
+
+//while (currentCard != "Spade" ){
+//console. log (currentCard);
+//currentCard = cards [Math. floor (Math. random()*4)];
+//console. log (currentcard); }   
+
+
 //Activity 1
 
 // Step 1: array with 3 favorite Adele songs
@@ -44,4 +68,4 @@ let favSongs = 1
     ]
 
    // ACTIVITY 2
-   
+

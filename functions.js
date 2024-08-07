@@ -40,9 +40,7 @@ console.log(ticketPrice);
 const favColor = (color) => {
     console. log(`My favourite color is ${color} `)
 }
-favColor("blue")
-favColor("green")
-favColor("red")
+//favColor()
 
 
 const checkTicketPrice = (age) =>{
@@ -56,3 +54,17 @@ const checkTicketPrice = (age) =>{
 checkTicketPrice()
 checkTicketPrice()
 checkTicketPrice()
+
+const addUp = (num1, num2) => {
+    return num1 + num2
+}
+
+addUp(2,3)
+console.log(addUp(4, 5))
+
+if (addUp(3,4)>10){
+    console.log("bigger than 10")
+}else {
+    console.log("not")
+}
+

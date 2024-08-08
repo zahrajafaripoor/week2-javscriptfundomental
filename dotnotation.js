@@ -31,6 +31,8 @@ function printGrid(rows, cols) {
 // چاپ شبکه
 printGrid(rows, cols);
 
+OR
+
 console.log("  |   |  ")
 console.log("  |   |  ")
 console.log("---------")

@@ -52,15 +52,15 @@ name = "Sara";
 age = 30;
 favouriteColour = "green";
 
-// Log the new sentence
+
 console.log(`My name is ${name}, I am ${age} years old and my favourite colour is ${favouriteColour}.`);
 
 
 // ACTIVITY 2
 
 
-// Log today's meals to the console
-// Store what you eat today
+
+// Store what I eat today
 let breakfast = "Pancakes";
 let lunch = "chicken and rice";
 let dinner = "Pasta";
@@ -68,12 +68,12 @@ let dinner = "Pasta";
 // Log today's meals to the console
 console.log(`Today I ate ${breakfast} for breakfast, ${lunch} for lunch, and ${dinner} for dinner.`);
 
-// Update each of these variables to what you will eat tomorrow
+// Update  to what I will eat tomorrow
 breakfast = "Egg";
 lunch = "Salad";
 dinner = "Pizza";
 
-// Log tomorrow's meals to the console
+
 console.log(`Tomorrow I will eat ${breakfast} for breakfast, ${lunch} for lunch, and ${dinner} for dinner.`);
 
 
@@ -84,7 +84,7 @@ let dateToday = new Date();
 
 // Step 2:  Date object for the next occurrence of my birth date
 let currentYear = dateToday.getFullYear();
-let nextBirthDate = new Date(currentYear,12, 22); // October is month 9 in JavaScript (0-indexed)
+let nextBirthDate = new Date(currentYear,12, 22); // December is 11 index(0)
 if (dateToday > nextBirthDate) {
     nextBirthDate.setFullYear(currentYear + 1);
 }

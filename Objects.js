@@ -59,65 +59,56 @@ console.log(Pet.drink());
 
 //activity 3
 
-let coffeeShop = {
-    branch: "Central",
-    drinks: { 
-        latte: 2.50, 
-        americano: 2.00, 
-        espresso: 1.75 
+const coffeeShop = {
+    branch: "Costa",
+    drinks: {
+        coffee: 2.00,
+        tea: 1.50,
+        latte: 3.00,
+        americano: 2.50
     },
-    food: { 
-        sandwich: 3.50, 
-        cake: 2.75 
+    food: {
+        cake: 4.00,
+        croissant: 2.50,
+        rice: 3.50,
+        chickenKebab: 5.00
     },
-    // drinks orders
+    drinksOrdered(orderedDrinks) {
+        let total = 0;
+        let orderDetails = "Your drink order is:\n";
 
-    drinksOrdered: function() {
-        // Array of drinks to be ordered
-
-        let order = ['latte', 'americano'];
-        let totalCost = 0;
-        let orderDetails = "Your drinks order is: ";
-
-        // Loop 
-        for (let drink of order) {
-            // Order details string
-
-            orderDetails += `${drink.charAt(0).toUpperCase() + drink.slice(1)} (£${this.drinks[drink].toFixed(2)}), `;
-
-            // total cost
-            totalCost += this.drinks[drink];
+        for (const drink of orderedDrinks) {
+            if (this.drinks[drink] !== undefined) {
+                total += this.drinks[drink];
+                orderDetails += `${drink.padEnd(15)} £${this.drinks[drink].toFixed(2)}\n`;
+            } else {
+                orderDetails += `Sorry, we don't serve ${drink}.\n`;
+            }
         }
 
-        // Add the total cost to the order details
-        orderDetails += `Total cost: £${totalCost.toFixed(2)}.`;
+        orderDetails += `\nTotal: £${total.toFixed(2)}`;
         return orderDetails;
     },
-    //  food orders
+    foodOrdered(orderedFood) {
+        let total = 0;
+        let orderDetails = "Your food order is:\n";
 
-    foodOrdered: function() {
-        // Array of food items to be ordered
-
-        let order = ['sandwich', 'cake'];
-        let totalCost = 0;
-        let orderDetails = "Your food order is: ";
-
-        // Loop 
-
-        for (let item of order) {
- // order details string
-
-            orderDetails += `${item.charAt(0).toUpperCase() + item.slice(1)} (£${this.food[item].toFixed(2)}), `;
-            // Accumulate the total cost
-            totalCost += this.food[item];
+        for (const food of orderedFood) {
+            if (this.food[food] !== undefined) {
+                total += this.food[food];
+                orderDetails += `${food.padEnd(15)} £${this.food[food].toFixed(2)}\n`;
+            } else {
+                orderDetails += `Sorry, we don't serve ${food}.\n`;
+            }
         }
 
-        // Add the total cost to the order details
-        orderDetails +=`Total cost: £${totalCost.toFixed(2)}.`;
+        orderDetails += `\nTotal: £${total.toFixed(2)}`;
         return orderDetails;
     }
 };
 
 
-console.log(coffeeShop.drinksOrdered());
-console.log(coffeeShop.foodOrdered());
+console.log(coffeeShop.drinksOrdered(["coffee", "latte", "tea", "smoothie"]));
+
+
+console.log(coffeeShop.foodOrdered(["cake", "rice", "burger"]));

@@ -101,7 +101,7 @@ switch (topping) {
 
 //ACTIVITY 3
 
-// variable for the password
+
 let password = "mypassword";
 
 // Check the number of characters in the password
@@ -201,7 +201,7 @@ console.log(`The length of the string is: ${str.length}`);
 // Define vowels
 const vowels = 'aeiou';
 
-// Initialize a variable to store the index of the last vowel
+// index of the last vowel
 let lastVowelIndex = -1;
 
 // Check for the last vowel using lastIndexOf method for each vowel
@@ -221,6 +221,32 @@ if (lastVowelIndex === -1) {
 }
 
 
+//ACTIVITY 8
+// Create a variable called word
+let word = "level";
+
+// Check if the first and last letters are the same
+if (word[0] === word[word.length - 1]) {
+    console.log(true); 
+} else {
+    console.log(false); 
+}
 
 
 
+//ACTIVITY 9
+
+
+let num1 = 4;
+let num2 = 7;
+
+
+let sum = num1 + num2;
+
+if (sum % 2 === 0) {
+    
+    console.log(sum);
+} else {
+    
+    console.log(num1 * num2);
+}

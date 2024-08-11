@@ -91,7 +91,6 @@ function countDown() {
     }
 }
 
-// Call the function for Activity 3
 countDown();
 
 //ACTIVITY 4

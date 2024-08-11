@@ -89,7 +89,7 @@ const computeFactorial = (n) => {
     }
 };
 
-// Example usage
+
 console.log("The factorial of 33 is " + computeFactorial(33));
 
 
@@ -106,13 +106,13 @@ const takeOrder = (topping1, topping2) => {
     console.log(`Order count is now: ${orderCount}`);
 };
 
-// Example usage
+
 takeOrder("pineapple", "ham");
 takeOrder("mushrooms", "pepperoni");
 
 //ACTIVITY3
 
-// Check the user's balance
+
 let balance = 1000;
 
 // Cash machine function
